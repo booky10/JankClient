@@ -9,6 +9,9 @@
 		<meta content="A spacebar client that has DMs, replying and more" property="og:description">
 		<meta content="/logo.webp" property="og:image">
 		<meta content="#4b458c" data-react-helmet="true" name="theme-color">
+		<script>window.instances = fetch("/instances.json").then(_=>_.json())</script>
+		<link rel="prefetch" href="/login.js">
+		<link rel="prefetch" href="/dialog.js">
 		<link href="/style.css" rel="stylesheet">
 		<link href="/themes.css" rel="stylesheet" id="lightcss">
 	</head>

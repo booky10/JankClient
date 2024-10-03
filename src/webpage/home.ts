@@ -2,8 +2,8 @@ import{ mobile }from"./login.js";
 console.log(mobile);
 const serverbox = document.getElementById("instancebox") as HTMLDivElement;
 
-fetch("/instances.json")
-	.then(_=>_.json())
+// @ts-ignore
+window.instances
 	.then(
 		(
 			json: {

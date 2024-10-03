@@ -585,8 +585,8 @@ export function getInstances(){
 	return instances;
 }
 
-fetch("/instances.json")
-	.then(res=>res.json())
+// @ts-ignore
+(window.instances || fetch("/instances.json").then(_=>_.json()))
 	.then(
 		(json: {
 			name: string;
